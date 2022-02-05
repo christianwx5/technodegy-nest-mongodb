@@ -13,4 +13,13 @@ export class ProductController {
             message: 'yolo'
         })
     }
+
+    @Get('/')
+    createGet(@Res() res) {
+        console.log();
+        
+        return res.status(HttpStatus.OK).json({
+            message: 'yoloso'
+        })
+    }
 }
